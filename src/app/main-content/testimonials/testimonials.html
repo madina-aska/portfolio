@@ -1,1 +1,24 @@
-<p>testimonials works!</p>
+<section class="testimonials">
+    <div class="container">
+        <h2 class="fontBaloo">{{ 'TESTIMONIALS.TITLE' | translate }}</h2>
+        <p class="subtitle fontmontserrat">{{ 'TESTIMONIALS.SUBTITLE' | translate }}</p>
+        <div class="testimonial-list fontmontserrat" #slider (touchstart)="onTouchStart($event)"
+            (touchmove)="onTouchMove($event)" (touchend)="onTouchEnd()">
+            <div class="testimonial">
+                <h3>Tobias Dreifke</h3>
+                <h4>Project Kochwelt</h4>
+                <p>{{ 'TESTIMONIALS.TOBIAS.TEXT' | translate }}</p>
+            </div>
+            <div class="testimonial">
+                <h3>Viktor Haas</h3>
+                <h4>Project Kochwelt</h4>
+                <p>{{ 'TESTIMONIALS.VIKTOR.TEXT' | translate }}</p>
+            </div>
+            <div class="testimonial">
+                <h3>Madina</h3>
+                <h4>Project Pollo Loco</h4>
+                <p>{{ 'TESTIMONIALS.MADINA.TEXT' | translate }}</p>
+            </div>
+        </div>
+    </div>
+</section>
