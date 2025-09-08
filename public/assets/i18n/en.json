@@ -1,0 +1,142 @@
+{
+  "ABOUT": {
+    "HEADLINE_PART1": "Let's work",
+    "HEADLINE_PART2": "together",
+    "INTRO": "I am",
+    "LOCATION": "located in Düsseldorf",
+    "REMOTE": "open to work remote",
+    "RELOCATE": "open to relocate",
+    "DESCRIPTION": "I’m passionate about programming because it lets me turn ideas into real solutions and keep learning new technologies.<br /><br />I approach problems with analytical thinking, creativity, and persistence, always aiming for efficient solutions and learning from each challenge.",
+    "SEND_MESSAGE": "Send Message"
+  },
+
+  "HEADER": {
+    "LOGO_ALT": "Portfolio Logo",
+    "ABOUT_ME": "About Me",
+    "SKILL_SET": "Skill Set",
+    "MY_WORK": "My Work",
+    "DE": "DE",
+    "EN": "EN"
+  },
+
+  "HOME": {
+    "PROFILE_ALT": "Profile picture",
+    "INTRO": "Hello! I am Madina",
+    "TITLE_LINE1": "FRONTEND",
+    "TITLE_LINE2": "DEVELOPER",
+    "SCROLL": "SCROLL",
+    "SCROLL_LINE_ALT": "Scroll line",
+    "GITHUB_ALT": "Github icon",
+    "EMAIL_ALT": "Email icon",
+    "LINKEDIN_ALT": "LinkedIn icon"
+  },
+
+  "MY_WORK": {
+    "TITLE": "My Work",
+    "INTRO": "Explore a selection of my work here - Interact with<br>to see my skills in action.",
+    "BLUE_SHAPE_ALT": "Decorative blue shape"
+  },
+  "PROJECTS": {
+    "POLLO_LOCO": {
+      "DESCRIPTION": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
+    },
+    "JOIN": {
+      "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+    }
+  },
+
+  "TESTIMONIALS": {
+    "TITLE": "Need a teamplayer?",
+    "SUBTITLE": "Here what my colleagues said about me",
+    "TOBIAS": {
+      "TEXT": "“[Your Name] is always supportive and works seamlessly with the team to reach goals effectively.”"
+    },
+    "VIKTOR": {
+      "TEXT": "“Brings fresh ideas to the table and helps the group find unique solutions to challenges.”"
+    },
+    "MADINA": {
+      "TEXT": "“Consistently delivers on promises and supports the team in every stage of the project.”"
+    }
+  },
+
+  "CONTACT": {
+    "TITLE": "Contact",
+    "SUBTITLE": "Got a problem to solve?",
+    "DESCRIPTION": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+    "CTA": "Need a Frontend developer?",
+    "CTA_BUTTON": "Contact me!",
+    "FORM": {
+      "NAME_LABEL": "Your name",
+      "NAME_ERROR": "Your name is required",
+      "EMAIL_LABEL": "Your email",
+      "EMAIL_ERROR": "Your email is required",
+      "MESSAGE_LABEL": "Your message",
+      "MESSAGE_ERROR": "Your message is empty",
+      "PRIVACY_TEXT": "I've read the",
+      "PRIVACY_LINK": "privacy policy",
+      "PRIVACY_TEXT_TWO": "and agree to the processing of my data as outlined",
+      "PRIVACY_ERROR": "Please accept the privacy policy",
+      "SUBMIT": "Say hello ;)"
+    }
+  },
+
+  "FOOTER": {
+    "LEGAL": "Legal Notice"
+  },
+
+  "PRIVACY": {
+    "TITLE": "Privacy Policy",
+    "LAST_UPDATED": "Last updated: September 02, 2025",
+    "INTRO_1": "This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.",
+    "INTRO_2": "We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href='https://www.freeprivacypolicy.com/free-privacy-policy-generator/' target='_blank' class='highlight'>Free Privacy Policy Generator</a>.",
+    "INTERPRETATION_TITLE": "Interpretation and Definitions",
+    "INTERPRETATION": "Interpretation",
+    "INTERPRETATION_TEXT": "The words of which the initial letter is capitalized have meanings defined under the following conditions...",
+    "DEFINITIONS_TITLE": "Definitions",
+    "DEFINITIONS_INTRO": "For the purposes of this Privacy Policy:",
+    "ACCOUNT": "Account: means a unique account created for You to access our Service.",
+    "AFFILIATE": "Affiliate: means an entity under common control with a party.",
+    "COMPANY": "Company: refers to <span class='highlight'>Portfolio</span>.",
+    "COOKIES": "Cookies: small files placed on Your device.",
+    "DATA_COLLECTION_TITLE": "Collecting and Using Your Personal Data",
+    "DATA_TYPES_TITLE": "Types of Data Collected",
+    "PERSONAL_DATA": "Personal Data",
+    "PERSONAL_DATA_TEXT": "While using Our Service, We may ask You to provide Us with certain personally identifiable information...",
+    "USAGE_DATA": "Usage Data",
+    "USAGE_DATA_TEXT": "Usage Data is collected automatically when using the Service...",
+    "COOKIES_TITLE": "Tracking Technologies and Cookies",
+    "COOKIES_TEXT": "We use Cookies and similar tracking technologies to track activity on Our Service...",
+    "USE_OF_DATA_TITLE": "Use of Your Personal Data",
+    "USE_OF_DATA_1": "To provide and maintain our Service: including monitoring usage.",
+    "USE_OF_DATA_2": "To manage Your Account: registration and access to functionalities.",
+    "CHILDREN_TITLE": "Children's Privacy",
+    "CHILDREN_TEXT": "Our Service does not address anyone under the age of 13...",
+    "LINKS_TITLE": "Links to Other Websites",
+    "LINKS_TEXT": "Our Service may contain links to other websites...",
+    "CHANGES_TITLE": "Changes to this Privacy Policy",
+    "CHANGES_TEXT": "We may update Our Privacy Policy from time to time...",
+    "CONTACT_TITLE": "Contact Us",
+    "CONTACT_TEXT": "If you have any questions, you can contact us:",
+    "CONTACT_LINK": "www.portfolio.com/contact"
+  },
+
+  "LEGAL_NOTICE": {
+    "TITLE": "Legal Notice",
+    "IMPRINT": "Imprint",
+    "EXPLORING_BOARD": "Exploring the Board",
+    "ACCEPTANCE_TITLE": "Acceptance of Terms",
+    "ACCEPTANCE_TEXT": "By accessing and using Portfolio (Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments thereto that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice.",
+    "SCOPE_TITLE": "Scope and Ownership of the Product",
+    "SCOPE_TEXT1": "Portfolio has been developed as part of a student group project in a web development bootcamp at the Developer Akademie GmbH. It has an educational purpose and is not intended for extensive personal & business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product.",
+    "SCOPE_TEXT2": "The design of Portfolio is owned by the Developer Akademie GmbH. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited.",
+    "PROPRIETARY_TITLE": "Proprietary Rights",
+    "PROPRIETARY_TEXT": "Aside from the design owned by Developer Akademie GmbH, we, the listed students, retain all proprietary rights in Portfolio, including any associated copyrighted material, trademarks, and other proprietary information.",
+    "USE_TITLE": "Use of the Product",
+    "USE_TEXT": "Portfolio is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of Portfolio for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of Portfolio.",
+    "WARRANTY_TITLE": "Disclaimer of Warranties and Limitation of Liability",
+    "WARRANTY_TEXT": "Portfolio is provided 'as is' without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will we, the listed students, or the Developer Akademie, be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of Portfolio.",
+    "INDEMNITY_TITLE": "Indemnity",
+    "INDEMNITY_TEXT": "You agree to indemnify, defend and hold harmless us, the listed students, the Developer Akademie, and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of Portfolio and/or your breach of this Legal Notice. For any questions or notices, please contact us at madin.aska@gmail.com.",
+    "DATE": "Date: September 05, 2025"
+  }
+}

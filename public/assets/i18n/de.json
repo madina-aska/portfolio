@@ -1,0 +1,142 @@
+{
+  "ABOUT": {
+    "HEADLINE_PART1": "Lass uns",
+    "HEADLINE_PART2": "zusammenarbeiten",
+    "INTRO": "Ich bin",
+    "LOCATION": "gevestigt in Düsseldorf",
+    "REMOTE": "bereit für Remote-Arbeit",
+    "RELOCATE": "bereit zum Umziehen",
+    "DESCRIPTION": "Ich bin leidenschaftlich am Programmieren interessiert, weil es mir ermöglicht, Ideen in echte Lösungen umzusetzen und neue Technologien zu lernen.<br /><br />Ich gehe Probleme analytisch, kreativ und beharrlich an und strebe stets nach effizienten Lösungen, während ich aus jeder Herausforderung lerne.",
+    "SEND_MESSAGE": "Nachricht senden"
+  },
+
+  "HEADER": {
+    "LOGO_ALT": "Portfolio-Logo",
+    "ABOUT_ME": "Über mich",
+    "SKILL_SET": "Fähigkeiten",
+    "MY_WORK": "Meine Arbeiten",
+    "DE": "DE",
+    "EN": "EN"
+  },
+
+  "HOME": {
+    "PROFILE_ALT": "Profilbild",
+    "INTRO": "Hallo! Ich bin Madina",
+    "TITLE_LINE1": "FRONTEND",
+    "TITLE_LINE2": "ENTWICKLERIN",
+    "SCROLL": "SCROLLEN",
+    "SCROLL_LINE_ALT": "Scroll-Leiste",
+    "GITHUB_ALT": "Github-Symbol",
+    "EMAIL_ALT": "E-Mail-Symbol",
+    "LINKEDIN_ALT": "LinkedIn-Symbol"
+  },
+
+  "MY_WORK": {
+    "TITLE": "Meine Arbeiten",
+    "INTRO": "Entdecken Sie eine Auswahl meiner Arbeiten – interagieren Sie mit<br>den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "BLUE_SHAPE_ALT": "Dekorative blaue Form"
+  },
+  "PROJECTS": {
+    "POLLO_LOCO": {
+      "DESCRIPTION": "Jump, run und Wurfspiel basierend auf objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen."
+    },
+    "JOIN": {
+      "DESCRIPTION": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag & Drop-Funktionen, weise Benutzer und Kategorien zu."
+    }
+  },
+
+  "TESTIMONIALS": {
+    "TITLE": "Brauchst du einen Teamplayer?",
+    "SUBTITLE": "Das sagen meine Kollegen über mich",
+    "TOBIAS": {
+      "TEXT": "„[Dein Name] ist immer unterstützend und arbeitet nahtlos mit dem Team zusammen, um Ziele effektiv zu erreichen.“"
+    },
+    "VIKTOR": {
+      "TEXT": "„Bringt frische Ideen ein und hilft der Gruppe, einzigartige Lösungen für Herausforderungen zu finden.“"
+    },
+    "MADINA": {
+      "TEXT": "„Hält stets Zusagen ein und unterstützt das Team in jeder Phase des Projekts.“"
+    }
+  },
+
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "SUBTITLE": "Hast du ein Problem zu lösen?",
+    "DESCRIPTION": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, welche Rolle dich interessiert. Zeige, dass du mit deiner Arbeit einen Mehrwert zu ihren Projekten beiträgst.",
+    "CTA": "Brauchst du einen Frontend-Entwickler?",
+    "CTA_BUTTON": "Kontaktiere mich!",
+    "FORM": {
+      "NAME_LABEL": "Dein Name",
+      "NAME_ERROR": "Dein Name ist erforderlich",
+      "EMAIL_LABEL": "Deine E-Mail",
+      "EMAIL_ERROR": "Deine E-Mail ist erforderlich",
+      "MESSAGE_LABEL": "Deine Nachricht",
+      "MESSAGE_ERROR": "Deine Nachricht ist leer",
+      "PRIVACY_TEXT": "Ich habe die",
+      "PRIVACY_LINK": "Datenschutzerklärung",
+      "PRIVACY_TEXT_TWO": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+      "PRIVACY_ERROR": "Bitte akzeptiere die Datenschutzerklärung",
+      "SUBMIT": "Sag Hallo ;)"
+    }
+  },
+
+  "FOOTER": {
+    "LEGAL": "Impressum"
+  },
+
+  "PRIVACY": {
+    "TITLE": "Datenschutzerklärung",
+    "LAST_UPDATED": "Zuletzt aktualisiert: 02. September 2025",
+    "INTRO_1": "Diese Datenschutzerklärung beschreibt unsere Richtlinien und Verfahren zur Erhebung, Nutzung und Offenlegung Ihrer Daten, wenn Sie den Service nutzen, und informiert Sie über Ihre Datenschutzrechte sowie darüber, wie das Gesetz Sie schützt.",
+    "INTRO_2": "Wir verwenden Ihre personenbezogenen Daten, um den Service bereitzustellen und zu verbessern. Durch die Nutzung des Services stimmen Sie der Erhebung und Nutzung von Informationen in Übereinstimmung mit dieser Datenschutzerklärung zu. Diese Datenschutzerklärung wurde mit Hilfe des <a href='https://www.freeprivacypolicy.com/free-privacy-policy-generator/' target='_blank' class='highlight'>Free Privacy Policy Generators</a> erstellt.",
+    "INTERPRETATION_TITLE": "Auslegung und Definitionen",
+    "INTERPRETATION": "Auslegung",
+    "INTERPRETATION_TEXT": "Wörter, deren Anfangsbuchstabe großgeschrieben ist, haben die unter den folgenden Bedingungen definierten Bedeutungen...",
+    "DEFINITIONS_TITLE": "Definitionen",
+    "DEFINITIONS_INTRO": "Für die Zwecke dieser Datenschutzerklärung:",
+    "ACCOUNT": "Konto: bedeutet ein eindeutiges Konto, das für Sie erstellt wurde, um auf unseren Service zuzugreifen.",
+    "AFFILIATE": "Verbundenes Unternehmen: bedeutet ein Unternehmen, das unter gemeinsamer Kontrolle mit einer Partei steht.",
+    "COMPANY": "Unternehmen: bezieht sich auf <span class='highlight'>Portfolio</span>.",
+    "COOKIES": "Cookies: kleine Dateien, die auf Ihrem Gerät gespeichert werden.",
+    "DATA_COLLECTION_TITLE": "Erhebung und Verwendung Ihrer personenbezogenen Daten",
+    "DATA_TYPES_TITLE": "Arten der erhobenen Daten",
+    "PERSONAL_DATA": "Personenbezogene Daten",
+    "PERSONAL_DATA_TEXT": "Während der Nutzung unseres Services können wir Sie bitten, uns bestimmte personenbezogene Daten zur Verfügung zu stellen...",
+    "USAGE_DATA": "Nutzungsdaten",
+    "USAGE_DATA_TEXT": "Nutzungsdaten werden automatisch bei der Verwendung des Services erhoben...",
+    "COOKIES_TITLE": "Tracking-Technologien und Cookies",
+    "COOKIES_TEXT": "Wir verwenden Cookies und ähnliche Tracking-Technologien, um Aktivitäten auf unserem Service zu verfolgen...",
+    "USE_OF_DATA_TITLE": "Verwendung Ihrer personenbezogenen Daten",
+    "USE_OF_DATA_1": "Zur Bereitstellung und Aufrechterhaltung unseres Services: einschließlich der Überwachung der Nutzung.",
+    "USE_OF_DATA_2": "Zur Verwaltung Ihres Kontos: Registrierung und Zugriff auf Funktionen.",
+    "CHILDREN_TITLE": "Datenschutz von Kindern",
+    "CHILDREN_TEXT": "Unser Service richtet sich nicht an Personen unter 13 Jahren...",
+    "LINKS_TITLE": "Links zu anderen Websites",
+    "LINKS_TEXT": "Unser Service kann Links zu anderen Websites enthalten...",
+    "CHANGES_TITLE": "Änderungen dieser Datenschutzerklärung",
+    "CHANGES_TEXT": "Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren...",
+    "CONTACT_TITLE": "Kontakt",
+    "CONTACT_TEXT": "Wenn Sie Fragen haben, können Sie uns kontaktieren:",
+    "CONTACT_LINK": "www.portfolio.com/kontakt"
+  },
+
+  "LEGAL_NOTICE": {
+    "TITLE": "Impressum",
+    "IMPRINT": "Impressum",
+    "EXPLORING_BOARD": "Exploring the Board",
+    "ACCEPTANCE_TITLE": "Annahme der Bedingungen",
+    "ACCEPTANCE_TEXT": "Durch den Zugriff auf und die Nutzung von Portfolio (Produkt) erkennen Sie die folgenden Bedingungen sowie alle Richtlinien, Leitlinien oder Änderungen an, die Ihnen von Zeit zu Zeit vorgelegt werden können. Wir, die genannten Studierenden, können die Bedingungen von Zeit zu Zeit ohne Vorankündigung ändern.",
+    "SCOPE_TITLE": "Umfang und Eigentum des Produkts",
+    "SCOPE_TEXT1": "Portfolio wurde im Rahmen eines Gruppenprojekts in einem Webentwicklungs-Bootcamp bei der Developer Akademie GmbH entwickelt. Es dient ausschließlich zu Bildungszwecken und ist nicht für umfangreiche private oder geschäftliche Nutzung vorgesehen. Daher können wir keine durchgehende Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder sonstige Qualität dieses Produkts garantieren.",
+    "SCOPE_TEXT2": "Das Design von Portfolio gehört der Developer Akademie GmbH. Unbefugte Nutzung, Vervielfältigung, Veränderung, Verteilung oder Reproduktion des Designs ist strengstens untersagt.",
+    "PROPRIETARY_TITLE": "Urheberrechte",
+    "PROPRIETARY_TEXT": "Abgesehen vom Design, das der Developer Akademie GmbH gehört, behalten wir, die genannten Studierenden, alle Eigentumsrechte an Portfolio, einschließlich aller damit verbundenen urheberrechtlich geschützten Materialien, Marken und anderen geschützten Informationen.",
+    "USE_TITLE": "Nutzung des Produkts",
+    "USE_TEXT": "Portfolio darf nur für rechtmäßige Zwecke gemäß allen geltenden Gesetzen und Vorschriften verwendet werden. Jegliche Nutzung von Portfolio für illegale Aktivitäten oder um andere Personen zu belästigen, zu bedrohen oder zu schädigen, ist strengstens untersagt. Sie sind allein verantwortlich für Ihre Interaktionen mit anderen Nutzern von Portfolio.",
+    "WARRANTY_TITLE": "Haftungsausschluss und Beschränkung der Haftung",
+    "WARRANTY_TEXT": "Portfolio wird 'wie besehen' ohne jegliche Garantie bereitgestellt, sei es ausdrücklich oder stillschweigend, einschließlich, aber nicht beschränkt auf stillschweigende Garantien der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung von Rechten. In keinem Fall haften wir, die genannten Studierenden oder die Developer Akademie, für direkte, indirekte, zufällige, spezielle, Folgeschäden oder exemplarische Schäden, einschließlich, aber nicht beschränkt auf Schäden aus entgangenem Gewinn, Geschäftswert, Nutzung, Daten oder anderen immateriellen Verlusten, selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden, die sich aus oder im Zusammenhang mit der Nutzung oder Leistung von Portfolio ergeben.",
+    "INDEMNITY_TITLE": "Freistellung",
+    "INDEMNITY_TEXT": "Sie erklären sich damit einverstanden, uns, die genannten Studierenden, die Developer Akademie sowie unsere verbundenen Unternehmen, Partner, Führungskräfte, Direktoren, Vertreter und Mitarbeiter von jeglichen Ansprüchen, Forderungen, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltsgebühren) freizustellen, die sich aus Ihrer Nutzung von Portfolio und/oder Ihrem Verstoß gegen diesen rechtlichen Hinweis ergeben. Für Fragen oder Hinweise kontaktieren Sie uns bitte unter madin.aska@gmail.com.",
+    "DATE": "Datum: 05. September 2025"
+  }
+}
