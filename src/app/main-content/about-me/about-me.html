@@ -1,1 +1,54 @@
-<p>about-me works!</p>
+<section class="about container" id="about-me">
+<div class="container">
+    <img src="./assets/img/Ellipse 5.png" alt="" class="big-blue-shape">
+
+  <div class="about-content">
+    
+    <div class="about-left">
+      <div class="headline-wrapper fontBaloo">
+        <h1 class="headline"><span>{{ 'ABOUT.HEADLINE_PART1' | translate }}</span><br /> {{ 'ABOUT.HEADLINE_PART2' | translate }}</h1>
+      </div>
+      
+      <div class="intro-wrapper fontBaloo">
+        <p class="intro">{{ 'ABOUT.INTRO' | translate }}</p>
+
+        <div class="info-boxes-wrapper fontmontserrat">
+          <div class="info-box">
+            <img src="./assets/icons/location.png" alt="Location" class="icon-default"/>
+            <img src="./assets/icons/location-hover.png" class="icon-hover" alt="Location"/>
+            <span>{{ 'ABOUT.LOCATION' | translate }}</span>
+          </div>
+          <div class="info-box">
+            <img src="./assets/icons/remote.png" alt="Remote Work" class="icon-default"/>
+            <img src="./assets/icons/remote-hover-new.png" class="icon-hover" alt="Remote Work"/>
+            <span>{{ 'ABOUT.REMOTE' | translate }}</span>
+          </div>
+          <div class="info-box">
+            <img src="./assets/icons/relocate.png" alt="Relocate" class="icon-default"/>
+            <img src="./assets/icons/relocate-hover.png" class="icon-hover" alt="Relocate"/>
+            <span>{{ 'ABOUT.RELOCATE' | translate }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-right fontmontserrat">
+      <div class="description-wrapper">
+        <p class="description" [innerHTML]="'ABOUT.DESCRIPTION' | translate">
+         I’m passionate about programming because it lets me turn ideas into real solutions and keep learning new technologies.
+          <br /><br />
+          I approach problems with analytical thinking, creativity, and persistence, always aiming for efficient solutions and learning from each challenge.
+        </p>
+      </div>
+
+      <div class="button-wrapper fontPoppins">
+        <button (click)="scrollToContact()" class="project-btn msg-btn"><span>{{ 'ABOUT.SEND_MESSAGE' | translate }}</span></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="blue-shape">
+    <img src="./assets/img/Ellipse 6.png" alt="">
+  </div>
+  </div>
+</section>
