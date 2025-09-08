@@ -1,1 +1,41 @@
-<p>header works!</p>
+<header class="site-header container">
+  <div class="header-container fontmontserrat">
+
+    <div class="logo">
+      <img [routerLink]="'/'" [src]="logo" alt="Logo" class="logo-default" />
+    </div>
+
+    <div class="burger" (click)="toggleMenu()" [hidden]="menuOpen">
+      <img src="./assets/icons/burger menu.png" alt="burger icon">
+    </div>
+
+    <div class="nav-right" [class.active]="menuOpen">
+      @if (menuOpen) {
+      <button class="close-btn" (click)="toggleMenu()">✕</button>
+      }
+
+      <nav class="nav-links">
+        <a (click)="scrollTo('about-me')">{{ 'HEADER.ABOUT_ME' | translate }}</a>
+        <a (click)="scrollTo('skill-set')">{{ 'HEADER.SKILL_SET' | translate }}</a>
+        <a (click)="scrollTo('my-work')">{{ 'HEADER.MY_WORK' | translate }}</a>
+      </nav>
+
+      <div class="nav-right mobile-nav" [class.active]="menuOpen">
+        @if (menuOpen) {
+        <button class="close-btn" (click)="toggleMenu()">✕</button>
+        <nav class="nav-links">
+          <a (click)="scrollTo('about-me'); toggleMenu()">{{ 'HEADER.ABOUT_ME' | translate }}</a>
+          <a (click)="scrollTo('skill-set'); toggleMenu()">{{ 'HEADER.SKILL_SET' | translate }}</a>
+          <a (click)="scrollTo('my-work'); toggleMenu()">{{ 'HEADER.MY_WORK' | translate }}</a>
+          <a (click)="scrollTo('contact'); toggleMenu()">{{ 'CONTACT.TITLE' | translate }}</a>
+        </nav>
+        }
+        <div class="lang-switch">
+          <a (click)="switchLanguage('de')" [class.active]="currentLang==='de'">{{ 'HEADER.DE' | translate }}</a>
+          <span> / </span>
+          <a (click)="switchLanguage('en')" [class.active]="currentLang==='en'">{{ 'HEADER.EN' | translate }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
