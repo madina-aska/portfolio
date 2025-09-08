@@ -1,0 +1,20 @@
+<div class="project-card" [class.right-layout]="index % 2 === 1" [class.text-right]="index % 2 === 1">
+    <div class="project-image-wrapper">
+        <img class="project-image" src="{{ imageUrl }}" alt="{{ title }}" />
+    </div>
+
+    <div class="project-text">
+        <h3 class="fontBaloo">{{ title }}</h3>
+        <p class="tech-stack fontmontserrat">{{ techStack }}</p>
+        @if(description) {
+        <p class="fontmontserrat">{{ description | translate }}</p>
+        }
+
+        <div class="project-buttons">
+        <button class="project-btn fontPoppins" (click)="openProject()"><span>Github</span></button>
+        <button class="project-btn live-test-btn fontPoppins" (click)="openLiveTest()" >
+        <span>Live Test</span>
+      </button>
+    </div>
+    </div>
+</div>

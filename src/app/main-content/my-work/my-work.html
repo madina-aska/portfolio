@@ -1,1 +1,23 @@
-<p>my-work works!</p>
+<section class="my-work" id="my-work">
+    <img src="./assets/img/Ellipse 7.png" alt="blue-shape" class="blue-shape shape-1">
+    <img src="./assets/img/Ellipse 8.png" alt="blue-shape" class="blue-shape shape-2">
+    <img src="./assets/img/Ellipse 4.png" alt="blue-shape" class="blue-shape shape-3">
+    <img src="./assets/img/Ellipse 9.png" alt="blue-shape" class="blue-shape shape-4">
+    <img src="./assets/img/Ellipse 10.png" alt="blue-shape" class="blue-shape shape-5">
+    <div class="container">
+        <div class="intro">
+            <h1 class="fontBaloo">{{ 'MY_WORK.TITLE' | translate }}</h1>
+            <p class="fontmontserrat" [innerHTML]="'MY_WORK.INTRO' | translate">>Explore a selection of my work here -
+                Interact with
+                <br /> to see my skills in action.
+            </p>
+        </div>
+        <div class="projects">
+            @for(project of projects; track $index) {
+            <app-project-card [title]="project.title" [techStack]="project.techStack" [imageUrl]="project.imageUrl"
+                [description]="project.description" [url]="project.url" [liveTestUrl]="project.liveTestUrl" [index]="$index">
+            </app-project-card>
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,177 @@
+.project-card {
+  display: flex;
+  align-items: flex-end;
+  gap: 5rem;
+  margin-bottom: 8rem;
+
+  &.right-layout {
+    flex-direction: row-reverse;
+
+    .project-text {
+      text-align: right;
+
+      h3,
+      p,
+      .tech-stack {
+        text-align: right;
+      }
+
+      .project-btn {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .project-image-wrapper {
+    width: 50%;
+    flex: 0 0 auto; /* keeps fixed size */
+    width: 650px; /* increase wrapper width */
+    height: auto; /* let height scale automatically */
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s cubic-bezier(0.3, 0.8, 0.3, 1),
+      box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .project-image-wrapper:hover .project-image {
+    transform: translateY(-50px) scale(1.05);
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    h3 {
+      font-size: 2.8rem;
+      line-height: 120%;
+      letter-spacing: 0%;
+      margin-bottom: 1rem;
+      color: rgba(89, 136, 255, 1);
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 120%;
+      letter-spacing: 0%;
+      color: rgba(0, 0, 0, 1);
+      margin-bottom: 1.5rem;
+    }
+
+    .tech-stack {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: rgba(89, 136, 255, 1);
+      margin: 0.5rem 0 1rem;
+    }
+  }
+
+  .project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;        /* space between buttons */
+  margin-top: 1rem;
+  flex-wrap: nowrap; /* keep buttons in one row */
+}
+}
+
+/* ========================
+   RESPONSIVE PROJECT CARD
+   ======================== */
+
+@media (max-width: 900px) {
+  .project-card {
+    flex-direction: column !important; /* stack image and text */
+    align-items: center; /* center everything */
+    text-align: center; /* center text content */
+    margin-bottom: 4rem; /* reduce spacing for mobile */
+    margin-top: 5rem;
+
+    .project-image-wrapper,
+    .project-text {
+      width: 100%; /* full width */
+      max-width: 600px; /* optional: limit width on large phones */
+    }
+
+    .project-text {
+      margin-top: 1rem; /* spacing between image and text */
+
+      h3,
+      p,
+      .tech-stack {
+        text-align: center !important; /* center text elements */
+      }
+    }
+  }
+
+  .project-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+    text-align: center;
+    white-space: nowrap;    /* prevent text from wrapping */
+    
+  
+  }
+  .live-test-btn {
+    display: inline-flex; /* show button */
+    background-color: rgba(89, 136, 255, 1);
+    color: white;
+
+    .project-buttons {
+    justify-content: center; /* center both buttons */
+    gap: 0.8rem; /* optional smaller gap */
+  }
+
+    
+  }
+
+
+
+  
+}
+
+/* Hide Live Test button on desktop */
+@media (min-width: 901px) {
+  .live-test-btn {
+    display: none;
+  }
+}
+
+/* Extra small screens (phones <576px) */
+@media (max-width: 576px) {
+  .project-card {
+    gap: 2rem; /* reduce gap between image and text */
+
+    .project-text {
+      h3 {
+        font-size: 2rem; /* slightly smaller titles */
+      }
+      p {
+        font-size: 0.95rem;
+      }
+      .tech-stack {
+        font-size: 1.2rem;
+      }
+    }
+
+    .project-image-wrapper {
+      width: 100%;
+      max-width: 100%; /* full width for tiny screens */
+    }
+  }
+
+  .project-btn {
+    font-size: 17px;
+  }
+}
