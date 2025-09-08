@@ -1,0 +1,352 @@
+.contact-section {
+  min-height: 100vh;
+  padding: 6rem 5%;
+  position: relative;
+  background-color: rgba(234, 240, 255, 1);
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: start;
+    position: relative;
+  }
+  .left {
+    position: relative;
+    padding-right: 2rem;
+
+    .title {
+      font-size: 5.6rem;
+      margin: 0 0 1rem;
+      color: rgba(89, 136, 255, 1);
+      font-weight: 900;
+      line-height: 120%;
+      letter-spacing: 0%;
+    }
+
+    .intro {
+      max-width: 520px;
+      padding-top: 5rem;
+
+      h2 {
+        color: rgba(89, 136, 255, 1);
+        font-size: 2rem;
+        margin-bottom: 2.1rem;
+        line-height: 120%;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 1);
+        line-height: 120%;
+        letter-spacing: 0%;
+        margin-bottom: 1rem;
+      }
+
+      .ctalink {
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 120%;
+        margin-top: 1.8rem;
+        color: rgba(89, 136, 255, 1);
+        a {
+          color: rgba(89, 136, 255, 1);
+          text-decoration: none;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .blue-shape {
+    position: absolute;
+    pointer-events: none;
+
+    &.shape-14 {
+      top: 47rem;
+      left: 75rem;
+    }
+
+    &.shape-11 {
+      top: 27rem;
+      left: 7rem;
+    }
+
+    &.shape-13 {
+      bottom: 20rem;
+      left: 50rem;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-top: 13rem;
+
+    .contact-form {
+      width: 100%;
+      max-width: 620px;
+
+      .input-group {
+        position: relative;
+        margin-bottom: 18px;
+
+        .input,
+        textarea {
+          width: 100%;
+          border-radius: 10px;
+          border: 1px solid rgba(89, 136, 255, 1);
+          padding: 15px 25px;
+          font-size: 1rem;
+          margin-bottom: 0.1rem;
+          outline: none;
+          cursor: pointer;
+          transition: box-shadow 0.2s;
+
+          &:hover {
+            box-shadow: 0 0 0 1px rgb(6, 71, 237); 
+          }
+
+          &:focus + label,
+          &.ng-dirty + label {
+            top: -8px;
+            left: 10px;
+            font-size: 1rem;
+            color: black;
+            background-color: white;
+          }
+        }
+        label {
+          position: absolute;
+          left: 20px;
+          top: 16px;
+          font-size: 1rem;
+          color: black;
+          pointer-events: none;
+          transition: all 0.2s ease;
+        }
+      }
+    }
+
+    .actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.6rem;
+  
+.project-btn {
+    font-size: 25px;       
+    max-width: 20rem;     
+    padding: 0.9rem 1.8rem; 
+    
+    span {
+      font-size: inherit;  
+    }
+  }
+  }
+}
+  .textarea {
+    min-height: 220px;
+    resize: vertical;
+  }
+
+  
+}
+
+.contact-form .error-message {
+  display: block;
+  font-size: 0.85rem;
+  color: #e63946;
+  margin-bottom: 13px;
+  font-weight: 400;
+  line-height: 1.3;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.privacy-row {
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+
+  .checkbox-label {
+    display: inline-flex;
+    gap: 10px;
+    white-space: nowrap;
+
+    &:hover {
+      input[type="checkbox"] {
+        border-color: rgba(2, 72, 247, 0.8);
+        background-color: rgba(89, 136, 255, 0.05);
+        box-shadow: 0 0 10px rgba(10, 67, 213, 0.4); /* subtle blue glow */
+        background-color: rgba(98, 137, 236, 0.4);
+      }
+
+      span a {
+        color: rgba(2, 72, 247, 0.8);
+        text-decoration: underline;
+        font-weight: 900;
+      }
+    }
+
+    input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(89, 136, 255, 1);
+      border-radius: 2px;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.2s ease;
+
+      &:checked {
+        background-color: rgba(89, 136, 255, 1);
+        border-color: rgba(89, 136, 255, 1);
+      }
+
+      &:checked::after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 5px;
+        width: 4px;
+        height: 8px;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+    }
+
+    span {
+      color: rgba(0, 0, 0, 1);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.4;
+      
+
+      a {
+        color: rgba(89, 136, 255, 1);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+    }
+  }
+}
+
+.scroll-up-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.scroll-up-btn {
+  transition: 0.3s;
+}
+
+.scroll-up-btn:hover {
+  content: url("./../../../../public/assets/img/up-btn-hover.png");
+}
+
+@media (max-width: 1099px) and (min-width: 800px) {
+  .contact-section {
+    .left .intro h2 {
+      font-size: 1.6rem;
+    }
+
+    .blue-shape.shape-11 {
+      top: 26rem;
+      left: 4rem;
+    }
+    .blue-shape.shape-13 {
+      bottom: 21rem;
+      left: 193%;
+      width: 110px;
+    }
+    .blue-shape.shape-14 {
+      top: 50rem;
+      left: 203%;
+      width: 80px;
+    }
+  }
+}
+
+@media (max-width: 799px) {
+  .contact-section {
+    padding: 9rem 0%;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .left {
+      width: 100%;
+      padding-right: 0;
+      .title {
+        font-size: 2.5rem;
+        text-align: left;
+      }
+      .intro {
+        padding-top: 1rem;
+        h2 {
+          font-size: 1.3rem;
+          text-align: left;
+        }
+        p {
+          font-size: 0.95rem;
+          text-align: left;
+        }
+      }
+    }
+
+    .right {
+      width: 100%;
+      padding: 0;
+      .contact-form {
+        max-width: 100%;
+      }
+    }
+
+    .blue-shape.shape-11 {
+      display: none;
+    }
+
+    .blue-shape.shape-14 {
+      display: block;
+      position: absolute;
+      top: 56rem;
+      left: 93%;
+      width: 43px;
+      transform: translateX(-50%);
+    }
+
+    .blue-shape.shape-13 {
+      display: block;
+      position: absolute;
+      top: -6rem;
+      left: 83%;
+      transform: translateX(-50%);
+      width: 100px;
+    }
+
+    .scroll-up-container {
+      position: relative;
+      top: 6rem;
+      right: 40%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .blue-shape.shape-14 {
+    display: block;
+    position: absolute;
+    top: 53rem;
+    left: 92%;
+    width: 30px;
+  }
+}

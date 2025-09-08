@@ -1,1 +1,80 @@
-<p>contact works!</p>
+<section class="contact-section" id="contact">
+  <div class="container">
+
+    <div class="left">
+      <h1 class="title fontBaloo">{{ 'CONTACT.TITLE' | translate }}</h1>
+
+      <div class="intro">
+        <h2 class="fontmontserrat">{{ 'CONTACT.SUBTITLE' | translate }}</h2>
+        <p class="fontmontserrat">
+          {{ 'CONTACT.DESCRIPTION' | translate }}
+        </p>
+        <p class="ctalink fontPoppins">
+          {{ 'CONTACT.CTA' | translate }}
+          <a href="#contactForm"><strong class="fontBaloo">{{ 'CONTACT.CTA_BUTTON' | translate }}</strong></a>
+        </p>
+      </div>
+      <img src="./assets/img/Ellipse 11.png" alt="" class="blue-shape shape-11">
+      <img src="./assets/img/Ellipse 13.png" alt="" class="blue-shape shape-13">
+      <img src="./assets/img/Ellipse 14.png" alt="" class="blue-shape shape-14">
+    </div>
+
+    <div class="right">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" id="contactForm"
+        class="contact-form fontmontserrat">
+
+        <div class="input-group">
+          <input #name="ngModel" [(ngModel)]="contactData.name" id="name" name="name" class="input fontmontserrat"
+            required />
+          <label for="name">{{ 'CONTACT.FORM.NAME_LABEL' | translate }}</label>
+          <span class="validation-icon"></span>
+        </div>
+        @if (!name.valid && name.touched) {
+        <span class="fontmontserrat error-message">{{ 'CONTACT.FORM.NAME_ERROR' | translate }}</span>
+        }
+
+        <div class="input-group">
+          <input #email="ngModel" [(ngModel)]="contactData.email" id="email" name="email" type="email"
+            class="input fontmontserrat" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+          <label for="email">{{ 'CONTACT.FORM.EMAIL_LABEL' | translate }}</label>
+          <span class="validation-icon"></span>
+        </div>
+        @if (!email.valid && email.touched) {
+        <span class="fontmontserrat">{{ 'CONTACT.FORM.EMAIL_ERROR' | translate }}</span>
+        }
+
+        <div class="input-group">
+          <textarea #message="ngModel" minlength="5" [(ngModel)]="contactData.message" id="message" name="message"
+            class="textarea fontmontserrat" required></textarea>
+          <label for="message">{{ 'CONTACT.FORM.MESSAGE_LABEL' | translate }}</label>
+          <span class="validation-icon"></span>
+        </div>
+        @if (!message.valid && message.touched) {
+        <span class="fontmontserrat error-message">{{ 'CONTACT.FORM.MESSAGE_ERROR' | translate }}</span>
+        }
+
+        <div class="privacy-row">
+          <label class="checkbox-label">
+            <input #privacy="ngModel" [(ngModel)]="contactData.privacy" type="checkbox" name="privacy" id="checkbox"
+              required />
+            <span>
+              {{ 'CONTACT.FORM.PRIVACY_TEXT' | translate }}
+              <a href="privacy-policy">{{ 'CONTACT.FORM.PRIVACY_LINK' | translate }}</a>
+              {{ 'CONTACT.FORM.PRIVACY_TEXT_TWO' | translate }}
+            </span>
+          </label>
+        </div>
+        @if (!privacy.valid && privacy.touched) {
+        <span class="fontmontserrat error-message">{{ 'CONTACT.FORM.PRIVACY_ERROR' | translate }}</span>
+        }
+
+        <div class="actions">
+          <button type="submit" class="project-btn" [disabled]="!privacy.valid"><span>{{ 'CONTACT.FORM.SUBMIT' | translate }}</span></button>
+        </div>
+      </form>
+    </div>
+    <div class="scroll-up-container" (click)="scrollTo('hero')">
+      <img src="./assets/img/up-btn.png" alt="Up button" class="scroll-up-btn" />
+    </div>
+  </div>
+</section>
