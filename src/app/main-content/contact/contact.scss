@@ -66,12 +66,12 @@
     pointer-events: none;
 
     &.shape-14 {
-      top: 47rem;
+      top: 42rem;
       left: 75rem;
     }
 
     &.shape-11 {
-      top: 27rem;
+      top: 30rem;
       left: 7rem;
     }
 
@@ -108,16 +108,21 @@
           transition: box-shadow 0.2s;
 
           &:hover {
-            box-shadow: 0 0 0 1px rgb(6, 71, 237); 
+            box-shadow: 0 0 0 1px rgb(6, 71, 237);
           }
 
           &:focus + label,
           &.ng-dirty + label {
-            top: -8px;
-            left: 10px;
+            top: -9px;
+            left: 20px;
             font-size: 1rem;
             color: black;
-            background-color: white;
+            background: linear-gradient(
+              to bottom,
+              rgba(234, 240, 255, 1) 50%,
+              transparent 50%
+            );
+            padding: 0 4px;
           }
         }
         label {
@@ -129,31 +134,58 @@
           pointer-events: none;
           transition: all 0.2s ease;
         }
+
+        .validation-icon {
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 18px;
+          height: 18px;
+          pointer-events: none;
+
+          &.valid::after {
+            content: "✓";
+            color: #2ecc71;
+            font-size: 1.1rem;
+            font-weight: bold;
+          }
+
+          &.invalid::after {
+            content: "✕";
+            color: #e63946;
+            font-size: 1.1rem;
+            font-weight: bold;
+          }
+        }
+
+        textarea ~ .validation-icon {
+          top: 10px;
+          transform: none;
+        }
       }
     }
 
     .actions {
-    display: flex;
-    justify-content: center;
-    margin-top: 2.6rem;
-  
-.project-btn {
-    font-size: 25px;       
-    max-width: 20rem;     
-    padding: 0.9rem 1.8rem; 
-    
-    span {
-      font-size: inherit;  
+      display: flex;
+      justify-content: center;
+      margin-top: 2.6rem;
+
+      .project-btn {
+        font-size: 25px;
+        max-width: 20rem;
+        padding: 0.9rem 1.8rem;
+
+        span {
+          font-size: inherit;
+        }
+      }
     }
   }
-  }
-}
   .textarea {
     min-height: 220px;
     resize: vertical;
   }
-
-  
 }
 
 .contact-form .error-message {
@@ -224,7 +256,6 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 1.4;
-      
 
       a {
         color: rgba(89, 136, 255, 1);
@@ -236,7 +267,10 @@
 }
 
 .scroll-up-container {
-  display: inline-block;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 20;
   cursor: pointer;
 }
 
@@ -248,30 +282,33 @@
   content: url("./../../../../public/assets/img/up-btn-hover.png");
 }
 
-@media (max-width: 1099px) and (min-width: 800px) {
-  .contact-section {
-    .left .intro h2 {
-      font-size: 1.6rem;
-    }
-
-    .blue-shape.shape-11 {
-      top: 26rem;
-      left: 4rem;
-    }
-    .blue-shape.shape-13 {
-      bottom: 21rem;
-      left: 193%;
-      width: 110px;
-    }
-    .blue-shape.shape-14 {
-      top: 50rem;
-      left: 203%;
-      width: 80px;
-    }
-  }
+.contact-success-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(89, 136, 255, 1);
+  color: #fff;
+  padding: 1.8rem 3rem;
+  border-radius: 16px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+  max-width: 90%;
+  text-align: center;
 }
 
-@media (max-width: 799px) {
+.contact-success-popup.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(-10px);
+}
+
+@media (max-width: 1100px) {
   .contact-section {
     padding: 9rem 0%;
 
@@ -335,7 +372,7 @@
     .scroll-up-container {
       position: relative;
       top: 6rem;
-      right: 40%;
+      left: -37%;
       margin: 0 auto;
     }
   }

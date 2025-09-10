@@ -2,12 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
-import { ViewportScroller } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { socialLinks } from '../../social-links';
 
 @Component({
   selector: 'app-contact',
-  imports: [FormsModule, TranslateModule],
+  imports: [FormsModule, TranslateModule, CommonModule],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })
@@ -29,10 +29,10 @@ export class Contact {
     privacy: false,
   };
 
-  // mailTest = true;
+  showSuccess = false;
 
   post = {
-    endPoint: 'http://madina-askarzada.com/sendMail.php',
+    endPoint: 'https://madina-askarzada.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -43,23 +43,27 @@ export class Contact {
   };
 
   onSubmit(ngForm: NgForm) {
-    // if (ngForm.valid && ngForm.submitted) {
-    // console.log(this.contactData);
-    // }
     if (ngForm.submitted && ngForm.form.valid) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            this.showSuccess = true;
+
+            setTimeout(() => {
+              this.showSuccess = false;
+            }, 3000);
+
             ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
+            
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid) {
-      ngForm.resetForm();
+    } else if (ngForm.submitted && !ngForm.form.valid) {
+      ngForm.resetForm(); 
     }
   }
 }

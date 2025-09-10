@@ -1,6 +1,5 @@
 <section class="contact-section" id="contact">
   <div class="container">
-
     <div class="left">
       <h1 class="title fontBaloo">{{ 'CONTACT.TITLE' | translate }}</h1>
 
@@ -27,7 +26,8 @@
           <input #name="ngModel" [(ngModel)]="contactData.name" id="name" name="name" class="input fontmontserrat"
             required />
           <label for="name">{{ 'CONTACT.FORM.NAME_LABEL' | translate }}</label>
-          <span class="validation-icon"></span>
+          <span class="validation-icon"
+            [ngClass]="{ 'valid': name.valid && name.touched, 'invalid': !name.valid && name.touched }"></span>
         </div>
         @if (!name.valid && name.touched) {
         <span class="fontmontserrat error-message">{{ 'CONTACT.FORM.NAME_ERROR' | translate }}</span>
@@ -37,17 +37,26 @@
           <input #email="ngModel" [(ngModel)]="contactData.email" id="email" name="email" type="email"
             class="input fontmontserrat" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
           <label for="email">{{ 'CONTACT.FORM.EMAIL_LABEL' | translate }}</label>
-          <span class="validation-icon"></span>
+          <span class="validation-icon"
+            [ngClass]="{ 'valid': email.valid && email.touched, 'invalid': !email.valid && email.touched }"></span>
         </div>
-        @if (!email.valid && email.touched) {
-        <span class="fontmontserrat">{{ 'CONTACT.FORM.EMAIL_ERROR' | translate }}</span>
+        @if (email.touched && email.errors?.['required']) {
+        <span class="fontmontserrat error-message">
+          {{ 'CONTACT.FORM.EMAIL_REQUIRED' | translate }}
+        </span>
+        }
+        @if (email.touched && email.errors?.['pattern']) {
+        <span class="fontmontserrat error-message">
+          {{ 'CONTACT.FORM.EMAIL_INVALID' | translate }}
+        </span>
         }
 
         <div class="input-group">
-          <textarea #message="ngModel" minlength="5" [(ngModel)]="contactData.message" id="message" name="message"
+          <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message"
             class="textarea fontmontserrat" required></textarea>
           <label for="message">{{ 'CONTACT.FORM.MESSAGE_LABEL' | translate }}</label>
-          <span class="validation-icon"></span>
+          <span class="validation-icon"
+            [ngClass]="{ 'valid': message.valid && message.touched, 'invalid': !message.valid && message.touched }"></span>
         </div>
         @if (!message.valid && message.touched) {
         <span class="fontmontserrat error-message">{{ 'CONTACT.FORM.MESSAGE_ERROR' | translate }}</span>
@@ -69,12 +78,16 @@
         }
 
         <div class="actions">
-          <button type="submit" class="project-btn" [disabled]="!privacy.valid"><span>{{ 'CONTACT.FORM.SUBMIT' | translate }}</span></button>
+          <button type="submit" class="project-btn" [disabled]="!privacy.valid"><span>{{ 'CONTACT.FORM.SUBMIT' |
+              translate }}</span></button>
         </div>
       </form>
     </div>
     <div class="scroll-up-container" (click)="scrollTo('hero')">
       <img src="./assets/img/up-btn.png" alt="Up button" class="scroll-up-btn" />
     </div>
+  </div>
+  <div class="contact-success-popup" [class.show]="showSuccess">
+    <p>{{ 'CONTACT.FORM.SUCCESS_MESSAGE' | translate }}</p>
   </div>
 </section>
