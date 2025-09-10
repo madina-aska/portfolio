@@ -69,14 +69,16 @@
       "NAME_LABEL": "Dein Name",
       "NAME_ERROR": "Dein Name ist erforderlich",
       "EMAIL_LABEL": "Deine E-Mail",
-      "EMAIL_ERROR": "Deine E-Mail ist erforderlich",
+      "EMAIL_REQUIRED": "Deine E-Mail ist erforderlich.",
+      "EMAIL_INVALID": "Bitte gib eine gültige E-Mail-Adresse ein.",
       "MESSAGE_LABEL": "Deine Nachricht",
       "MESSAGE_ERROR": "Deine Nachricht ist leer",
       "PRIVACY_TEXT": "Ich habe die",
       "PRIVACY_LINK": "Datenschutzerklärung",
       "PRIVACY_TEXT_TWO": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
       "PRIVACY_ERROR": "Bitte akzeptiere die Datenschutzerklärung",
-      "SUBMIT": "Sag Hallo ;)"
+      "SUBMIT": "Sag Hallo ;)",
+      "SUCCESS_MESSAGE" : "Vielen Dank! Wir melden uns bald bei Ihnen."
     }
   },
 

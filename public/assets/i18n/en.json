@@ -69,14 +69,16 @@
       "NAME_LABEL": "Your name",
       "NAME_ERROR": "Your name is required",
       "EMAIL_LABEL": "Your email",
-      "EMAIL_ERROR": "Your email is required",
+      "EMAIL_REQUIRED": "Your email is required.",
+      "EMAIL_INVALID": "Your email is not valid.",
       "MESSAGE_LABEL": "Your message",
       "MESSAGE_ERROR": "Your message is empty",
       "PRIVACY_TEXT": "I've read the",
       "PRIVACY_LINK": "privacy policy",
       "PRIVACY_TEXT_TWO": "and agree to the processing of my data as outlined",
       "PRIVACY_ERROR": "Please accept the privacy policy",
-      "SUBMIT": "Say hello ;)"
+      "SUBMIT": "Say hello ;)",
+      "SUCCESS_MESSAGE" : "Thank you! We'll get back to you soon."
     }
   },
 
