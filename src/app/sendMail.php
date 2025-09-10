@@ -1,5 +1,4 @@
 <?php
-
 switch ($_SERVER['REQUEST_METHOD']) {
     case ("OPTIONS"): //Allow preflighting to take place.
         header("Access-Control-Allow-Origin: *");
@@ -18,7 +17,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $name = $params->name;
             $message = $params->message;
     
-            $recipient = 'madina.aska@outlook.com';  
+            $recipient = 'madin.aska@gmail.com';  
             $subject = "Contact From <$email>";
             $message = "From:" . $name . "<br>" . $message ;
     
@@ -27,7 +26,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $headers[] = 'Content-type: text/html; charset=utf-8';
 
             // Additional headers
-            $headers[] = "From: noreply@mywebsite.com";
+            $headers[] = "From: myPortfolio@mywebsite.com";
 
             mail($recipient, $subject, $message, implode("\r\n", $headers));
             break;
