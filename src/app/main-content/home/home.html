@@ -4,9 +4,11 @@
     <div class="hero-image">
       <img src="./assets/img/my-image.png" alt="Profile" class="profile-img" />
     </div>
-    <div class="hero-text">
+    <div class="hero-text" [ngClass]="{'german': currentLang === 'de'}">
       <p class="intro fontmontserrat">{{ 'HOME.INTRO' | translate }}</p>
-      <h1 class="title fontBaloo">{{ 'HOME.TITLE_LINE1' | translate }}<br>{{ 'HOME.TITLE_LINE2' | translate }}</h1>
+      <h1 class="title fontBaloo"><span class="line-1">{{ 'HOME.TITLE_LINE1' | translate }}</span>
+        <br> <span class="line-2">{{ 'HOME.TITLE_LINE2' | translate }}</span>
+      </h1>
     </div>
   </div>
   <div class="scroll-indicator">
@@ -20,5 +22,8 @@
       <img src="./assets/icons/email.png" alt="Email icon"></a>
     <a [href]="links.linkedin" target="_blank" rel="noopener noreferrer">
       <img src="./assets/icons/linkedin.png" alt="Linkedin icon"> </a>
+  </div>
+  <div class="mobile-scroll-indicator">
+    <img src="./assets/img/Scroll down.png" alt="Scroll Down Logo">
   </div>
 </section>
