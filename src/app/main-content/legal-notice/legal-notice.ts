@@ -9,5 +9,6 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './legal-notice.scss'
 })
 export class LegalNotice {
+  
 
 }

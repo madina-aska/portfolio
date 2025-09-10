@@ -3,7 +3,7 @@
   margin: 13rem auto;
   padding: 0 20px;
   color: #333;
- 
+
   h1 {
     font-size: 5.6rem;
     margin-bottom: 1.5rem;
@@ -37,7 +37,8 @@
     color: rgba(89, 136, 255, 1);
   }
 
-  p, ul {
+  p,
+  ul {
     font-size: 1rem;
     margin-bottom: 1rem;
     line-height: 1.5;
@@ -60,26 +61,24 @@
     z-index: 0;
     pointer-events: none;
 
-    &.shape-14 {  
+    &.shape-14 {
       top: 10rem;
       right: 4rem;
       height: 10rem;
       width: 10rem;
-    
     }
 
-    &.shape-15 {  
-      top: 58rem;  
+    &.shape-15 {
+      top: 58rem;
       right: 0;
     }
 
-    &.shape-16 {  
-      top: 90rem;  
+    &.shape-16 {
+      top: 90rem;
       left: 0;
     }
   }
 }
-
 
 @media (max-width: 1200px) {
   .blue-shape.shape-16 {
@@ -87,11 +86,10 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .privacy-policy {
     margin: 3rem auto;
-    padding: 0 15px;
+    padding: 110px 15px;
   }
 
   .privacy-policy h1 {
@@ -114,7 +112,7 @@
   .privacy-policy ul {
     font-size: 0.95rem;
   }
-  
+
   .blue-shape {
     display: none;
   }

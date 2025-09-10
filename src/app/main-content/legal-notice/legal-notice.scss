@@ -57,21 +57,20 @@
     z-index: 0;
     pointer-events: none;
 
-    &.shape-14 {  
+    &.shape-14 {
       top: 12rem;
       right: 4rem;
       height: 10rem;
       width: 10rem;
-    
     }
 
-    &.shape-15 {  
-      top: 40rem;  
+    &.shape-15 {
+      top: 40rem;
       right: 0;
     }
 
-    &.shape-16 {  
-      top: 60rem;  
+    &.shape-16 {
+      top: 60rem;
       left: 0;
     }
   }
@@ -80,7 +79,7 @@
 @media (max-width: 768px) {
   .legal-notice {
     margin: 3rem auto;
-    padding: 0 15px;
+    padding: 110px 15px;
   }
 
   .legal-notice h1 {

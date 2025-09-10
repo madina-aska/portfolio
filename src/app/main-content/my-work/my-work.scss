@@ -3,7 +3,6 @@
   padding: 13rem 10%;
   background: #fff;
   overflow: hidden;
-
 }
 
 .my-work .intro {
@@ -35,7 +34,7 @@
   pointer-events: none;
 }
 
-/* Default positions for large screens */
+
 .my-work .blue-shape.shape-1 { top: 40px; left: 40%; width: 120px; }
 .my-work .blue-shape.shape-2 { top: 150px; right: 10%; width: 120px; }
 .my-work .blue-shape.shape-3 { top: 550px; left: 0; width: 200px; z-index: 0; }
@@ -58,7 +57,7 @@
   .my-work .blue-shape.shape-4 { width: 320px; top: 1140px; }
 }
 
-/* Medium screens (max 992px) */
+
 @media (max-width: 992px) {
   .my-work { padding: 8rem 5%; }
   .my-work .intro { bottom: 50px; }
@@ -71,12 +70,12 @@
   .my-work .blue-shape.shape-4 { width: 290px; top: 1210px; }
 }
 
-/* Smaller tablets (max 900px) */
+
 @media (max-width: 900px) {
   .my-work .blue-shape.shape-4 { top: 1280px; }
 }
 
-/* Small tablets / large phones (max 800px) */
+
 @media (max-width: 800px) {
   .my-work { padding: 6rem 2rem; }
   .my-work .intro { bottom: 0; }
@@ -88,14 +87,14 @@
   .my-work .blue-shape.shape-5 { display: none; }
 }
 
-/* Medium mobile (max 650px) */
+
 @media (max-width: 650px) {
   .my-work .blue-shape.shape-4 { top: 1250px; }
 }
 
-/* Mobile phones (max 600px) */
+
 @media (max-width: 600px) {
-  .my-work { padding: 4rem 1.5rem; }
+  .my-work { padding: 4rem 0.9rem; }
   .my-work .intro h1 { font-size: 4.3rem; }
   .my-work .intro p { font-size: 1rem; }
 
@@ -104,14 +103,21 @@
   .my-work .projects { padding: 0 1rem; }
 }
 
-/* Small phones (max 480px) */
+
 @media (max-width: 480px) {
   .my-work .blue-shape.shape-3 { width: 95px; top: 479px; }
   .my-work .blue-shape.shape-4 { width: 160px; top: 1500px; }
 }
 
-/* Ultra small phones (max 360px) */
+
 @media (max-width: 360px) {
   .my-work .blue-shape.shape-3 { width: 80px; top: 473px; }
   .my-work .blue-shape.shape-4 { width: 140px; top: 1550px; }
+}
+
+
+@media (max-width: 344px) {
+  .container {padding: 0 0; }
+  .my-work .blue-shape.shape-3 { width: 80px; top: 378px; }
+  .my-work .blue-shape.shape-4 { width: 130px; top: 970px; }
 }

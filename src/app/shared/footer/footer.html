@@ -1,11 +1,24 @@
 <footer>
     <section class="footer_container">
-        <a (click)="scrollTo('hero')"><img class="footer_logo_desktop hide_mobile_logo" src="./assets/img/logo.png" role="img"
-                alt="logo"></a>
+        <a (click)="scrollTo('hero')"><img class="footer_logo_desktop hide_mobile_logo" src="./assets/img/logo.png"
+                role="img" alt="logo"></a>
 
         <div class="footer-center-container fontmontserrat">
             <span class="footer-center">&copy; Madina Askarzada 2025</span>
-            <a href="legal-notice"  class="footer-legal">{{ 'FOOTER.LEGAL' | translate }}</a>
+
+            <div class="mobile_socialmedia_box">
+                <a [href]="links.github" target="_blank" rel="noopener noreferrer"><img
+                        class="footer_socialmedia_box_children" role="img" src="./assets/icons/Github-button.png"
+                        alt="logo of GitHub"></a>
+
+                <a (click)="scrollTo('contact')"><img class="footer_socialmedia_box_children" role="img"
+                        src="./assets/icons/Email-button.png" alt="logo of email"></a>
+
+                <a [href]="links.linkedin" target="_blank" rel="noopener noreferrer"><img
+                        class="footer_socialmedia_box_children" role="img" src="./assets/icons/Linkedin-button.png"
+                        alt="logo of linkedin"></a>
+            </div>
+            <a href="legal-notice" class="footer-legal">{{ 'FOOTER.LEGAL' | translate }}</a>
         </div>
 
         <div class="footer_socialmedia_box">
@@ -13,9 +26,8 @@
                     class="footer_socialmedia_box_children" role="img" src="./assets/icons/Github-button.png"
                     alt="logo of GitHub"></a>
 
-            <a (click)="scrollTo('contact')"><img
-                    class="footer_socialmedia_box_children" role="img" src="./assets/icons/Email-button.png"
-                    alt="logo of email"></a>
+            <a (click)="scrollTo('contact')"><img class="footer_socialmedia_box_children" role="img"
+                    src="./assets/icons/Email-button.png" alt="logo of email"></a>
 
             <a [href]="links.linkedin" target="_blank" rel="noopener noreferrer"><img
                     class="footer_socialmedia_box_children" role="img" src="./assets/icons/Linkedin-button.png"
