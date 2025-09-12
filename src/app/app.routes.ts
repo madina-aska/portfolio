@@ -7,6 +7,6 @@ export const routes: Routes = [
     { path: '', component: MainContent }, // landing page
     { path: 'privacy-policy', component: PrivacyPolicy },
     { path: 'legal-notice', component: LegalNotice },
-    { path: '', redirectTo: '/', pathMatch: 'full' }, // adjust based on your landing page
-    { path: '**', redirectTo: '' } // wildcard → back to landing
+    { path: '', redirectTo: '/', pathMatch: 'full' }, 
+    { path: '**', redirectTo: '' } 
 ];
