@@ -3,6 +3,7 @@
   min-height: 100vh;
   width: 100%;
   padding-top: 100px;
+  padding: 0;
   overflow: hidden;
   background-color: rgba(242, 245, 255, 255);
   display: flex;
@@ -53,7 +54,7 @@
   align-items: flex-start;
   padding: 2rem;
   z-index: 2;
-  padding-bottom: 20rem;
+  padding-bottom: 10rem;
   word-wrap: break-word;
   white-space: normal;
 }
@@ -85,7 +86,7 @@
 
 .scroll-indicator {
   position: absolute;
-  right: 30%;
+  right: 35%;
   bottom: 0;
   text-align: center;
 }
@@ -104,14 +105,18 @@
   width: 2%;
 }
 
+.social-media-container {
+  position: relative; 
+  height: 100%; 
+}
+
 .social-media {
   position: absolute;
-  right: 10%;
-  bottom: 5%;
+  right: 0;     
+  bottom: 3rem;     
   display: flex;
   flex-direction: column;
   gap: 25px;
-  z-index: 2;
 }
 
 .social-media img {
@@ -123,7 +128,7 @@
 }
 
 .social-media a {
-  cursor: default;
+  cursor: pointer;
 }
 
 .mobile-scroll-indicator {
