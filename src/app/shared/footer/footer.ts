@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { socialLinks } from '../../social-links';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -17,5 +17,9 @@ export class Footer {
 
   scrollTo(sectionId: string) {
     this.viewportScroller.scrollToAnchor(sectionId);
+  }
+
+  scrollToTop() {
+    this.viewportScroller.scrollToPosition([0, 0]);
   }
 }
