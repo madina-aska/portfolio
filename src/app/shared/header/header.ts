@@ -2,6 +2,7 @@ import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component, inject, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,24 +12,20 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './header.scss',
 })
 export class Header {
+  private viewportScroller = inject(ViewportScroller);
   private translate = inject(TranslateService);
+  private router = inject(Router);
+
+  menuOpen: boolean = false;
 
   currentLang: string = this.translate.currentLang || 'en';
+
+  @Input() logo: string = './assets/img/logo.png';
 
   switchLanguage(lang: string) {
     this.translate.use(lang);
     this.currentLang = lang;
   }
-
-  @Input() logo: string = './assets/img/logo.png';
-
-  private viewportScroller = inject(ViewportScroller);
-
-  scrollTo(sectionId: string) {
-    this.viewportScroller.scrollToAnchor(sectionId);
-  }
-
-  menuOpen: boolean = false;
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
@@ -41,5 +38,21 @@ export class Header {
         burger.classList.remove('hidden');
       }
     }
+  }
+
+    navigateToSection(sectionId: string) {
+    if (this.router.url === '/') {
+      // Already on home page
+      this.scrollTo(sectionId);
+    } else {
+      // Navigate to home, then scroll
+      this.router.navigate(['/']).then(() => {
+        setTimeout(() => this.scrollTo(sectionId), 50); // small delay for DOM
+      });
+    }
+  }
+
+  scrollTo(sectionId: string) {
+    this.viewportScroller.scrollToAnchor(sectionId);
   }
 }
