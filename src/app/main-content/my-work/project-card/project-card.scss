@@ -24,9 +24,9 @@
 
   .project-image-wrapper {
     width: 50%;
-    flex: 0 0 auto; /* keeps fixed size */
-    width: 650px; /* increase wrapper width */
-    height: auto; /* let height scale automatically */
+    flex: 0 0 auto; 
+    width: 650px; 
+    height: auto; 
   }
 
   .project-image {
@@ -76,86 +76,81 @@
   }
 
   .project-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;        /* space between buttons */
-  margin-top: 1rem;
-  flex-wrap: nowrap; /* keep buttons in one row */
-}
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+    margin-top: 1rem;
+    flex-wrap: nowrap; 
+  }
 }
 
-/* ========================
-   RESPONSIVE PROJECT CARD
-   ======================== */
 
 @media (max-width: 900px) {
   .project-card {
-    flex-direction: column !important; /* stack image and text */
-    align-items: center; /* center everything */
-    text-align: center; /* center text content */
-    margin-bottom: 4rem; /* reduce spacing for mobile */
+    flex-direction: column !important; 
+    align-items: center; 
+    text-align: center; 
+    margin-bottom: 4rem; 
     margin-top: 5rem;
 
     .project-image-wrapper,
     .project-text {
-      width: 100%; /* full width */
-      max-width: 600px; /* optional: limit width on large phones */
+      width: 100%; 
+      max-width: 600px; 
     }
 
     .project-text {
-      margin-top: 1rem; /* spacing between image and text */
+      margin-top: 1rem; 
 
       h3,
       p,
       .tech-stack {
-        text-align: center !important; /* center text elements */
+        text-align: center !important; 
       }
     }
   }
 
   .project-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    white-space: nowrap;    /* prevent text from wrapping */
-    
-  
+    white-space: nowrap; 
   }
   .live-test-btn {
-    display: inline-flex; /* show button */
+    display: inline-flex; 
     background-color: rgba(89, 136, 255, 1);
     color: white;
 
     .project-buttons {
-    justify-content: center; /* center both buttons */
-    gap: 0.8rem; /* optional smaller gap */
+      justify-content: center; 
+      gap: 0.8rem; 
+    }
   }
-
-    
-  }
-
-
-
-  
 }
 
-/* Hide Live Test button on desktop */
+
 @media (min-width: 901px) {
   .live-test-btn {
     display: none;
   }
 }
 
-/* Extra small screens (phones <576px) */
+
 @media (max-width: 576px) {
+
+  * {
+    
+    transform: none !important;
+    transition: none !important;
+  }
+
   .project-card {
-    gap: 2rem; /* reduce gap between image and text */
+    gap: 2rem; 
 
     .project-text {
       h3 {
-        font-size: 2rem; /* slightly smaller titles */
+        font-size: 2rem; 
       }
       p {
         font-size: 0.95rem;
@@ -167,7 +162,7 @@
 
     .project-image-wrapper {
       width: 100%;
-      max-width: 100%; /* full width for tiny screens */
+      max-width: 100%; 
     }
   }
 
