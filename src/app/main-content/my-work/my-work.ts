@@ -25,7 +25,7 @@ export class MyWork {
       imageUrl: './assets/img/El Pollo Loco.jpg',
       description: 'PROJECTS.POLLO_LOCO.DESCRIPTION',
       url: 'https://github.com/madina-aska/el_pollo_loco.git',
-      liveTestUrl: 'https://github.com/madina-aska/el_pollo_loco.git', // must give the ptoject url in my own server
+      liveTestUrl: 'https://madina-askarzada.com/el_pollo_loco', 
     },
     {
       title: 'Join',
