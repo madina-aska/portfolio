@@ -4,10 +4,12 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { socialLinks } from '../../social-links';
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-contact',
-  imports: [FormsModule, TranslateModule, CommonModule],
+  imports: [FormsModule, TranslateModule, CommonModule, RouterModule],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })
