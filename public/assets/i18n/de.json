@@ -31,6 +31,10 @@
     "LINKEDIN_ALT": "LinkedIn-Symbol"
   },
 
+   "SKILL_SET": {
+    "TITLE": "Fähigkeiten"
+  },
+
   "MY_WORK": {
     "TITLE": "Meine Arbeiten",
     "INTRO": "Entdecken Sie eine Auswahl meiner Arbeiten – interagieren Sie mit<br>den Projekten, um meine Fähigkeiten in Aktion zu sehen.",

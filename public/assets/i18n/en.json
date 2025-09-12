@@ -31,6 +31,10 @@
     "LINKEDIN_ALT": "LinkedIn icon"
   },
 
+  "SKILL_SET": {
+    "TITLE": "Skill Set"
+  },
+
   "MY_WORK": {
     "TITLE": "My Work",
     "INTRO": "Explore a selection of my work here - Interact with<br>to see my skills in action.",
